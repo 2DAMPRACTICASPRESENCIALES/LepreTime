@@ -41,7 +41,9 @@ public class AppController implements Initializable {
             loader.setController(stopWatchController);
             VBox stopWatchBox = loader.load();
 
-            tabPane.getTabs().add(new Tab("Crono", stopWatchBox));
+            Tab tab = new Tab("Crono " + stopWatchController.getId(), stopWatchBox);
+            tabPane.getTabs().add(tab);
+            tabPane.getSelectionModel().select(tab);
 
         } catch (IOException ioe) {
             ioe.printStackTrace();
@@ -58,7 +60,7 @@ public class AppController implements Initializable {
             loader.setController(timerController);
             VBox stopWatchBox = loader.load();
 
-            tabPane.getTabs().add(new Tab("Timer", stopWatchBox));
+            tabPane.getTabs().add(new Tab("Timer " + timerController.getId(), stopWatchBox));
 
         } catch (IOException ioe) {
             ioe.printStackTrace();

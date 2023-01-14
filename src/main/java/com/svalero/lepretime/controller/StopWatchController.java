@@ -11,9 +11,18 @@ import java.util.ResourceBundle;
 
 public class StopWatchController implements Initializable {
 
+    public int id;
     public Label lStopWatch;
 
     public StopWatchTask stopWatchTask;
+
+    public StopWatchController() {
+        this.id = Thread.activeCount();
+    }
+
+    public int getId() {
+        return id;
+    }
 
     public void start(ActionEvent event) {
 
