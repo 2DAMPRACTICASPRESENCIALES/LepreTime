@@ -19,7 +19,7 @@ public class ClockTask extends Task<Integer> {
 
     @Override
     protected Integer call() throws Exception {
-        logger.trace("Timer iniciada");
+        logger.trace("Reloj iniciada");
 
         while (true){
             Thread.sleep(1000);
