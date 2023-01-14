@@ -54,17 +54,17 @@
       </Label>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Button mnemonicParsing="false" style="-fx-background-color: #111111;" text="Return" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#reanudar" style="-fx-background-color: #111111;" text="Return" textFill="WHITE">
                <HBox.margin>
                   <Insets left="55.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" style="-fx-background-color: #111111;" text="Stop" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#stop" style="-fx-background-color: #111111;" text="Stop" textFill="WHITE">
                <HBox.margin>
                   <Insets left="15.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" style="-fx-background-color: #111111;" text="Restart" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#refresh" style="-fx-background-color: #111111;" text="Restart" textFill="WHITE">
                <HBox.margin>
                   <Insets left="15.0" />
                </HBox.margin>
